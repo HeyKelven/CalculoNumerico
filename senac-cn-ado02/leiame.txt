@@ -1,0 +1,16 @@
+#Plot SENO e COSSENO
+ 
+#O arquivo trig.c tem apenas uma função que nos leva para o arquivo lib.h.
+
+#No lib.h está contido todos os includes e também existe um define antes de tudo para a função para preencher o arquivo png pedido funcione. Há também um DEFINE definindo o valor de PI, já que esse numero é constantemente utilizado. E por fim existe a declaração da função principal, pitFile ().
+#Essa função está detalhada no lib.c.
+
+#ja no lib.c, estão todas as funções que o programa usa.
+#Em primeiro existe o changeToRad que altera todos os numero passados para radiano.
+#En seguida vem as funções criadas a partir da Serie de Taylor para calcular o SENO e COSSENO, retornado um double para cada um.
+#Depois dessa função existe as funções para calcular o erro absoluto e o erro relacional, para SENO e COSSENO.
+
+#Chegando no fim do programa, exiate a função putFile onde eh criada o .dat e o .png para o SENO e COSSENO, usando o gnuplot, popen e fprintf conseguimos plotar os valores de cada SENO e COSSENO passado (que nesse caso variará entre 0 a 4pi).
+#E junto nesse processo de plot dos pontos, a função fprintf também é usado para gravar os valores de SENO e COSSENO da função criada, da funcao existente na biblioteca math.h, o erro abosuloto e o erro relacional. 
+
+#E ao fim da execução acontece o exit (0).
