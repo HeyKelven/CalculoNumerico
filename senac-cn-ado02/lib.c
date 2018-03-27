@@ -80,6 +80,8 @@ void putFile(){
     fprintf(cos_plot, "set tic scale 0\n");
     fprintf(cos_plot, "set nokey\n");
 
+    fprintf(sin_plot,"plot '-' \n");
+    fprintf(cos_plot,"plot '-' \n");
 
     for (int x = 0; x <= 720; x++){
         fprintf(sin_dat,"%d\t%.7lf\t%lf\t%lf\n", x, f_sin(x), absolut_error_sin(x), relative_error_sin(x));
