@@ -31,3 +31,29 @@ double f_cos(double i){
     }
     return soma;
 }
+
+double relative_error_sin(double i){
+
+    double x = sin(chanToRad(i)), y = f_sen(chanToRad(i));
+    double res = (((x - y) * 100) / x);
+    return res > 0 ? res : res * (-1);
+}
+
+double absolut_error_sin(double i){
+    
+    double res = sin(chanToRad(i)) - f_sen(chanToRad(i));
+    return res > 0 ? res : res * (-1);
+}
+
+double relative_error_cos(double i){
+    
+    double x = cos(chanToRad(i)), y = f_cos(chanToRad(i));
+    double res = (((x - y) * 100) / x);
+    return res > 0 ? res : res * (-1);
+}
+
+double absolut_error_cos(double i){
+    
+    double res = cos(chanToRad(i)) - f_cos(chanToRad(i));
+    return res > 0 ? res : res * (-1);
+}
