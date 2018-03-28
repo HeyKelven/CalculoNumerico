@@ -91,6 +91,9 @@ void putFile(){
         fprintf(cos_plot, "%lf %lf\n", chanToRad(x), f_cos(x));
     }
 
+    fprintf(sin_plot,"e\n");
+    fprintf(cos_plot,"e\n");
+
     fclose(sin_plot);
     fclose(cos_plot);
     pclose(sin_dat);
