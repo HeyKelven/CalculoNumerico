@@ -59,4 +59,6 @@ void scaryerror(){
     pclose(e_flt);
     pclose(e_dbl);
     pclose(e_ldbl);
+
+    exit(0);
 }
