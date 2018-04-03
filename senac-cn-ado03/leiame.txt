@@ -1,0 +1,13 @@
+###Euler
+##In float, double and long double
+
+#A principio existe 3(três) arquivos: O euler.c, lib.c e o lib.h.
+
+#O lib.h carrega todas as bibliotecas ultilizadas e declara uma função que o euler.c utilizará e somente isso.
+
+#Já o lib.c contém todas as funções criadas para resolver o problema.
+
+#Primeiramente é criado 3(três) arquivos: euler_flt.png, euler_dbl.png e euler_ldbl.png.
+#Com isso, a proxima etapa é preparar o gráfico para receber os pontos. 
+#E já na parte dos pontos foram criados 3 laços, um para cada tipo de dado, para "plotar" no gráfico. Esses laços começam em 1 e vai até 10 elevado a 20 (100.000.000.000.000.000.000), e o incremento do contador é o produto do valor anterior e 10.
+#Com o laço finalizado, é finalizado o gráfico em cada arquivo .png criado e o programa finaliza com um exit(0).
